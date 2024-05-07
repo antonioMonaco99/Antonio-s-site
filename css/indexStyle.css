@@ -111,10 +111,14 @@ a.active {
 
 #write_effect{
     padding: 20px;
-    white-space: nowrap;
-    font-size: 38px;
+    text-align: center;
+    font-size: 40px;
 }
-
+@media (min-width: 786px){
+    #write_effect{
+    white-space: nowrap;
+    }
+}
 .socialIconHome{
     margin-top: 20px;
     width: 70px;
