@@ -1,0 +1,531 @@
+/*all body*/
+
+body {
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+    line-height: 1;
+}
+
+html,body{
+    width: 100vw; 
+    scroll-behavior: smooth; 
+}
+
+section {
+    min-height: 100vh;
+}
+
+/*nav*/
+
+@media (max-width: 786px){
+
+    .navALL{
+        flex-wrap: wrap;
+    }
+   nav{
+    min-height: 100px;
+   }
+
+}
+.navALL {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav1, .nav2 {
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav1 a, .nav2 a {
+    display: block; 
+    padding: 10px 40px; 
+    color: white;
+    text-decoration: none; 
+}
+
+nav{
+    border-bottom: 2px solid white;;
+    width: 100%;
+    background-color: transparent;
+    transition: top 0.3s;
+    transition: background-color 0.3s;
+    position: absolute;
+    height: 60px;
+    z-index: 1000;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #383838;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+nav a:hover {
+    background-color: #87cefa;
+    color: black;
+}
+
+a.active {
+    color: #87cefa;
+}
+
+/*home*/
+
+#home {
+    background-image:url(../img/sfondo.jpeg);
+    width: 100%;
+    background-size: cover ;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 1); 
+}
+
+#home h1{
+    font-size: 50px;
+}
+
+.introHome{
+    padding-top:100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+#write_effect{
+    padding: 20px;
+    white-space: nowrap;
+    font-size: 40px;
+}
+
+.socialIconHome{
+    margin-top: 20px;
+    width: 70px;
+    height: auto;  
+    transition: filter 0.3s ease;
+}
+.social-icons a{
+    text-decoration: none;
+}
+
+.scroll-button-home {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease; 
+}
+
+.scroll-button-home svg {
+    fill: #87cefa;
+}
+
+.scroll-button-home:hover {
+    background-color: white; 
+}
+
+.socialIconHome:hover {
+    filter: invert(100%) sepia(100%) hue-rotate(180deg);
+}
+
+/*about*/
+
+@media (max-width: 786px){
+    .aboutProfileSkill{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .Profile{
+        display: flex;
+        justify-content: center;
+    }
+    .Skill{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#about{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.aboutIntro{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.miafoto{ 
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border-color: #87cefa;
+    border-style: solid;
+}
+
+.sectionTitle{
+    color:#87cefa;
+    padding-top: 60px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.centerAbout{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.aboutcolor{
+    color: #87cefa;
+}
+
+.titleUnder{
+    color: grey;
+    text-align: left;
+}
+
+.Profile{
+    justify-content: left;
+    display: flex;
+    height: 200px;
+}
+
+.Skill{
+    justify-content: left;
+    display: flex;
+   height: 200px;
+}
+
+.aboutALL{
+    width: 80%;
+    
+}
+.aboutProfileSkill{
+    display: flex;
+    justify-content: center;
+    gap:70px;
+}
+
+.AboutButton{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding-top: 100px;
+}
+
+.rectangular-button-about {
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 9px 13px;
+    width: 150px;
+    color: black;
+    background-color:#87cefa;
+    border: 1px solid #87cefa;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.rectangular-button-about:hover {
+    background-color:white;
+    border-color: black;
+}
+
+/*resume section */
+
+#resume{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 786px){
+
+ .work-data{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .sxWork h2{
+    padding: 20px;
+ }
+}
+
+.resumeTitle{
+    font-size: 25px;
+}
+.img-resume{
+    width: 25px;
+    height: 25px;
+    padding: 20px;
+    border-radius: 30%;
+    background-color: #87cefa;
+}
+
+.Resume-intro h3{
+   margin-top: 30px;
+}
+
+.Resume-work{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#resume h3{
+    color: grey;
+    font-size: 30px;
+}
+
+.work-data{
+    display: flex;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+.work-when{
+    width: 100%;
+}
+
+.work-when hr{
+    margin: 0 12rem 0 12rem;
+}
+
+.workInfo{
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+.work-description{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sxWork{
+    position: absolute;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sxWork h2{
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 786px){
+
+    .sxWork{
+        position: relative;
+        padding-left: 0;
+    }
+
+    .sxWork>img{
+        position: absolute;
+        left: -100px;
+    }
+
+    .work-when>hr{
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+/*project*/
+
+.BoxContainer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.boxProject{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+}
+
+.boxProject img {
+    width: 300px; 
+    height: 300px;
+   
+}
+
+@media (max-width: 786px) { 
+    .boxProject{
+        box-sizing: border-box;
+        width: 80%;
+        height:80%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}
+
+.overlay:hover{
+    display: none;
+}
+
+.ProjectTitle{
+    text-align: center;
+}
+  
+.BoxContainer .boxProject img:hover,
+.BoxContainer .boxProject img:hover {
+    filter: brightness(70%);
+}
+
+.projectName{
+    text-align: center;
+}
+
+.projectSoon{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 100px;
+}
+
+    /*footer*/
+
+    footer{
+    background-color: black;
+    height: 100px;
+     }
+
+    .scroll-button-footer{
+        position: absolute;
+        background-color: grey;
+        padding: 20px;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 100%;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        
+    }
+    .scroll-button-footer svg {
+        fill: #87cefa;
+    }
+
+    .scroll-button-footer:hover {
+        
+        transition: background-color 0.3s ease; 
+    }
+    
+    .scroll-button-footer:hover {
+        background-color: white; 
+    }
+
+    .back-top{
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+    }
+
+    /*contact*/
+
+    #contact{
+        background-color: white;
+        color: black;   
+    }
+
+  .boxContact{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    padding-top: 150px;
+  }
+
+  .boxContact img{
+    height: 200px;
+    width: 200px;
+  }
+
+  .contactLinke{
+    text-decoration: none;
+    color: #87cefa;
+   
+  }
+
+  #contact .BoxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+   
+}
+@media (max-width: 786px) {
+   
+    #contact .BoxContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+        gap:30px;
+    }
+    .boxContact{
+        width: 100px;
+        height: 100px;
+        padding: 50px;
+    }
+    .boxContact img{
+        width: 100px;
+        height: 100px;
+    }
+}
